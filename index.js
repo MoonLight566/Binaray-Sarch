@@ -252,7 +252,8 @@ const prettyPrint = (node, prefix = "", isLeft = true) => {
     prettyPrint(node.left, `${prefix}${isLeft ? "    " : "│   "}`, true);
   }
 };
-let test = [1, 7, 4, 23, 8, 9, 4, 3, 5, 7, 9, 67, 6345, 324];
+
+let test = [8, 7, 6, 9, 1, 7, 7, 1, 11, 10, 11, 4];
 console.log(test);
 test = Tree(test);
 console.log(prettyPrint(test.root));
